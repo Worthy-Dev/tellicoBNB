@@ -1,4 +1,6 @@
 import React from 'react';
+// Global Styles
+import GlobalStyle from './components/GlobalStyles';
 // import Pages
 import Footer from './components/Footer';
 import Nav from './components/Nav';
@@ -13,6 +15,7 @@ import { Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
+        <GlobalStyle />
         <Nav />
       
       <Switch>
