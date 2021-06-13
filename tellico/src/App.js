@@ -4,11 +4,11 @@ import GlobalStyle from './components/GlobalStyles';
 // import Pages
 import Footer from './components/Footer';
 import Nav from './components/Nav';
-import AboutUs from './pages/AboutUs';
-import ContactUs from './pages/ContactUs';
-import Gallery from './pages/Gallery';
-import Home from './pages/Home';
-import Services from './pages/Services';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import Gallery from './components/Gallery';
+import Home from './components/Home';
+import Services from './components/Services';
 // Router
 import { Switch, Route } from 'react-router-dom';
 

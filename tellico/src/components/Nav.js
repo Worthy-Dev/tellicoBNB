@@ -1,43 +1,54 @@
-import React from 'react'
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 // import images
-import logo from '../images/TBB.png';
+import logo from "../images/TBB-nav-logo.svg";
+import hamburger from "../images/hamburger.svg";
 
 const Nav = () => {
-    return (
-        <NavContainer>
-            <div className="logo">
-                <img src={logo} alt="logo"/>
-            </div>
-            <div className="nav-links">
-                <ul>
-                    
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/services">Services</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About Us</Link>
-                    </li>
-                    <li>
-                        <Link to="/gallery">Gallery</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact Us</Link>
-                    </li>
-            
-                </ul>
-            </div>
-        </NavContainer>
-    )
-}
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const handleToggle = () => {
+    setNavbarOpen(prev => !prev)
+  }
+
+  return (
+    <NavContainer>
+      <div className="logoDiv">
+        <img className="logo" src={logo} alt="logo" />
+      </div>
+
+      <div className="navBar">
+        <button className="hamburger" onClick={handleToggle}>
+            <img src={hamburger} />
+        </button>
+        
+        <div className="nav-links">
+          <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </NavContainer>
+  );
+};
 
 const NavContainer = styled.div`
-    min-height: 10vh;
     display: flex;
+    flex-direction: row;
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -46,26 +57,65 @@ const NavContainer = styled.div`
     top: 0;
     z-index: 10;
 
-    a{
-        color: #3c403d;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 2rem; 
-    }
-
-    ul{
-        display: flex;
-        list-style: none;
-        margin: 0 2.5rem;
-    }
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0 1.5rem;
     img{
-        width: 150px;
-        height: 100px;
-        margin: 0 2.5rem;
+      width:42px;
+      height: 42px;
     }
+  }
 
-`
+  .menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: absolute;
+    top: 2;
+    background: #6c7d57;
+    right: 0;
+    height: 48vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 100%;
+    z-index: 9;
+  }
+  
+  .menuNav.showMenu {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 100px;
+    padding-left: 1.5rem;
+  }
 
+  a {
+    display: block;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+  }
 
-export default Nav
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  .menuNav li:first-child {
+    margin-top: 1.5rem;
+  }
+  
 
+`;
+
+export default Nav;

@@ -1,80 +1,134 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 // images
-import facebook from '../images/facebook.svg';
-import instagram from '../images/instagram.svg';
+import facebook from "../images/facebook.svg";
+import instagram from "../images/instagram.svg";
+import fullLogo from "../images/TBB-full.svg";
 
 const Footer = () => {
-    return (
-        <FooterContainer>
-            <div className="footer">
-                <div className="section">
-                    <h3>Social Media</h3>
-                    <a href="https://www.facebook.com/TellicoBandB/">
-                        <img src={facebook} alt="facebook icon"></img>
-                    </a>
-                    <a href="#">
-                        <img src={instagram} alt="instagram icon"></img>
-                    </a>
-                </div>
-                <div className="section">
-                    <h3>Company Links</h3>
-                    <div className="nav-links">
-                        <ul>
-                        
-                            <li>
-                                <Link to="/contact">Contact Us</Link>
-                            </li>
-                            <li>
-                                <Link to="/privacy-policy">Privacy Policy</Link>
-                            </li>
-                            <li>
-                                <Link to="/terms-of-service">Terms of Service</Link>
-                            </li>
-                
-                        </ul>
-                    </div>
-                </div>
-                <div className="section">
-                    <h3>Location</h3>
-                    <div className="address">
-                        <p>13500 Vonore Road</p>
-                        <p>Loudon, TN 37774</p>
-                    </div>
-                </div>
+  return (
+    <FooterContainer>
+      <div className="footer">
+        
+        <div className="section">
+            <div className="logo-container">
+                <img className="footer-logo" src={fullLogo} alt="logo" />
             </div>
-        </FooterContainer>
-    )
-}
+            <div className="phone">
+                <p>865-458-8534</p>
+                <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Tellico+Bed+And+Biscuit/@35.7052457,-84.3042971,17.18z/data=!4m13!1m7!3m6!1s0x885e7e70280fe9e1:0x818eeb52964b1ab7!2s13500+Vonore+Rd,+Loudon,+TN+37774!3b1!8m2!3d35.7053837!4d-84.3019763!3m4!1s0x885e7e6546044031:0xdbc136eb60b443a4!8m2!3d35.7042511!4d-84.3029911">Map / Directions</a>
+            </div>
+            <div className="address">   
+                <p>13500 Vonore Road</p>
+                <p>Loudon, TN 37774</p>
+            </div>
+
+            <div>   
+                <p className="hours">Monday - Saturday</p>
+                <p>9:00 a.m. - 12:00 p.m.</p>
+                <p>6:00 p.m. - 8:00 p.m.</p>
+                <p className="sunday">Sunday</p>
+                <p>6:00 p.m. - 8:00 p.m.</p>
+            </div>
+        </div>
+
+        <hr className="lines"></hr>
+       
+        <div className="section">
+          <div className="nav-links">
+            <ul>
+              <li>
+                <Link to="/contact">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/terms-of-service">Terms of Service</Link>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://www.facebook.com/TellicoBandB/">
+            <img className="social" src={facebook} alt="facebook icon"></img>
+          </a>
+          <a href="https://www.instagram.com/">
+            <img className="social" src={instagram} alt="instagram icon"></img>
+          </a>
+          
+        </div>
+          <p className="copyright">&copy; 2021 Tellico Bed & Biscuit. All rights reserved.</p>
+      </div>
+    </FooterContainer>
+  );
+};
 
 const FooterContainer = styled.div`
-    min-height: 20vh;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .footer {
     display: flex;
-    flex-direction: row;
-    background: #ffffff;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
-    
+    align-items: center;
 
-    .footer{
+    .copyright{
+        font-size: .7rem;
+        color: #c4bcbc;
+        margin-bottom: 1.5rem;
+    }
+
+    .logo-container{
         display: flex;
-        width: 100%;
         justify-content: center;
-        align-items: flex-start;
+
+        .footer-logo{
+            width: 125px;
+            height: 75px;
+        }
+    }
+  }
+
+  .section {
+    padding: 2rem;
+    .phone{
+        font-size: 1.3rem;
+        padding: .8rem;
+        font-weight:
+    }
+    .hours{
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+    .sunday{
+        padding-top: 1rem;
+        font-weight: bold;
     }
     
-    .section{
-        padding: 4rem;
+    .social{
+        padding: .7rem .2rem;
     }
-    
-    a{
-       text-decoration: none; 
-    }
+  }
 
-    ul{
-        list-style-type: none;
-    }
-`
-export default Footer
+  .lines{
+    border-top: 2px solid #6c7d57;
+    width: 15rem;
+  }
 
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+`;
+export default Footer;
