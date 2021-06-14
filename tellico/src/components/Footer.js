@@ -58,7 +58,7 @@ const Footer = () => {
           </a>
           
         </div>
-          <p className="copyright">&copy; 2021 Tellico Bed & Biscuit. All rights reserved.</p>
+          <p className="copyright">&copy; 2014 Tellico Bed & Biscuit. All rights reserved.</p>
       </div>
     </FooterContainer>
   );
@@ -125,7 +125,7 @@ const FooterContainer = styled.div`
   p{
     margin: 0;
   }
-  
+
   a {
     text-decoration: none;
   }

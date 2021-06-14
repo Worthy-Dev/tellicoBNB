@@ -1,11 +1,129 @@
 import React from 'react'
+import styled from "styled-components";
+// Images
+import boarding from '../images/boarding-2.gif'
+import daycare from '../images/daycare2.jpeg';
+import grooming from '../images/haircut.JPG';
 
 const Services = () => {
     return (
-        <div>
+        <ServicesContainer>
+            <div className="service">
+                <h2>Boarding</h2>
+                <img src={boarding} alt="horse booarding" />
+                <div className="details">
+                    <p>Whether you are gone for a month, a week, or a day, Tellico Bed & Biscuit is a state of the art facility that provides clean and safe First-class accommodations for your pet. Our top notch caregivers take every precaution to provide a healthy, enjoyable stay for each pet. </p>
+                    <p>Our kennels feature air-conditioning, radiant floor heat, and an air exchange ventilation system in a unique indoor-outdoor-indoor facility so your pet will be comfortable all year round.</p>
+                    <h3>Fees</h3>
+                    <h4>Includes play sessions, hammock-style beds (dogs & cats), prescribed medications, special diets, and bedtime treats. </h4>
+                    <div className="fee-section">
+                        <p>Horses: $? per day</p>
+                        <p>Dogs: $20 per day</p>
+                        <p>Cats: $15 per day</p>
+                        <p>Birds & Other: $5 per day</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="service">
+                <h2>Daycare</h2>
+                <img src={daycare} alt="sleeping cat" />
+                <div className="details">
+                    <p>Don't want to leave your pet home alone? Tellico Bed & Biscuit offers a convenient daycare option. Your pet will be given the opportunity to participate in one morning and one afternoon play session and benefit from the attention of qualified caregivers. Daycare provids peace of mind with the additional benefit of safety and consideration for your pet. </p>
+                    <p>Although most play time happens in our outdoor yards, we are an indoor facility, so activities go on throughout the day regardless of the weather.</p>
+
+                    <div className="fee-section">
+                        <p className="hours">Monday - Saturday</p>
+                        <p>9:00 a.m. - 8:00 p.m.</p>
+                    </div>
+
+                    <h3>Fees</h3>
+                    <div className="fee-section">
+                        <p>Dogs: $16 per day</p>
+                        <p>Cats: $? per day</p>
+                        <p>Birds & Other: $? per day</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="service">
+                <h2>Grooming</h2>
+                <img src={grooming} alt="dog haircut" />
+                <div className="details">
+                    <p> To keep your pet healthy, we highly recommend setting up a regular grooming appointment. We offer a variety of services to keep your pet clean, healthy, and happy.</p>
+                    <p>We recommend a departure bath for each pet that stays at our facility for more than three days.</p>
+
+                    <h3>Fees</h3>
+                    <h4>Includes shampoo, ear cleaning, and anal gland cleaning.</h4>
+                    <div className="fee-section">
+                        <p>Small (under 20 lbs): $16</p>
+                        <p>Medium (up to 50 lbs): $18</p>
+                        <p>Large (50+ lbs): $20</p>
+                    </div>
+
+                    <h4>Additional Services:</h4> 
+                    <div className="fee-section">
+                        <p>Nail Grinding: $10</p>
+                        <p>Extra Undercoat Raking: Starts at $5</p>
+                        <p>De-matting: Starts at $10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="service">
+                <h2>Additional Information</h2>
+                <div className="details">
+                    <p>We require proof of vaccinations for each pet. Dogs must be current on Rabies, Distemper, and Parvo, and Boardatella vaccine. Cats must be current on Rabies, RCP-C, and FeLV (or neg blood test).</p>
+                    <p>*Recieve 10% off for each additional pet visit.</p>
+                    <p>We accept cash and checks. No credit cards.</p>
+                </div>
+                <h3>Contact us today to make a reservation!</h3>
+            </div>
             
-        </div>
+            
+        </ServicesContainer>
     )
 }
 
-export default Services
+const ServicesContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 2.5rem;
+            padding: 1rem;
+        }
+        img{
+            width: 425px;
+            margin-bottom: 1rem;
+        }
+        h4{
+            font-size: 1.1rem;
+        }
+        h3{
+            margin: 1rem;
+            font-size: 1.4rem;
+        }
+        .fee-section{
+            p{
+                margin: 0;
+            }
+        }
+        .details{
+            margin: 1rem;
+        }
+
+    }
+    .boarding-container{
+        
+    }
+
+`
+export default Services;
