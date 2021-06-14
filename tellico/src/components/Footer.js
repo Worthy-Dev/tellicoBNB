@@ -102,7 +102,6 @@ const FooterContainer = styled.div`
     .phone{
         font-size: 1.3rem;
         padding: .8rem;
-        font-weight:
     }
     .hours{
         font-weight: bold;
@@ -123,6 +122,10 @@ const FooterContainer = styled.div`
     width: 15rem;
   }
 
+  p{
+    margin: 0;
+  }
+  
   a {
     text-decoration: none;
   }
