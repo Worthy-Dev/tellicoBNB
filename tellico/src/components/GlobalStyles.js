@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
         background: #627d57;
         color: #ffffff;
         border: none;
-        border-radius: .25rem;
+        border-radius: .10rem;
         line-height: 1.5;
         &:hover{
             color: #bccebc;

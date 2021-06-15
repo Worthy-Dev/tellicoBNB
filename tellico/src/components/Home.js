@@ -1,9 +1,9 @@
 import React from "react";
 import building from "../images/mainBuilding.jpg";
 import styled from "styled-components";
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import grooming from "../images/grooming.jpeg";
-import boarding from "../images/boarding.jpeg";
+import boarding from "../images/dogs-running.jpeg";
 import daycare from "../images/daycare.jpeg";
 
 
@@ -35,10 +35,9 @@ const Home = () => {
           <Card.Body>
             <Card.Title className="card-title">Boarding</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Your pet will be in excellent hands while you are away. Make reservations in advance to ensure your pet will have accommodations.
             </Card.Text>
-            <Button variant="primary">Learn More</Button>
+            <a className="button" href="/services#boarding">Learn More</a>
           </Card.Body>
         </Card>
 
@@ -47,10 +46,9 @@ const Home = () => {
           <Card.Body>
             <Card.Title className="card-title">Daycare</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              We offer peace of mind knowing your pet is in good hands and engaging in morning and afternoon play sessions.
             </Card.Text>
-            <Button variant="primary">Learn More</Button>
+            <a className="button" href="/services#daycare">Learn More</a>
           </Card.Body>
         </Card>
 
@@ -59,10 +57,9 @@ const Home = () => {
           <Card.Body>
             <Card.Title className="card-title">Grooming</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A pet likes to be pampered just as much as their owner. We love to make your four-legged family member look and smell great!
             </Card.Text>
-            <Button variant="primary">Learn More</Button>
+            <a className="button" href="/services#grooming">Learn More</a>
           </Card.Body>
         </Card>
       </div>
@@ -96,8 +93,6 @@ const HomeContainer = styled.div`
       margin: 1rem 0 1.5rem 1.5rem;
       background: #e7e8e1;
       color: #627d57;
-      
-    
     }
   }
 
@@ -129,7 +124,7 @@ const HomeContainer = styled.div`
     }
   }
 
-  Button {
+  .button {
         cursor: pointer;
         font-size: 1.1rem;
         padding: .5rem 1rem;
@@ -137,9 +132,12 @@ const HomeContainer = styled.div`
         font-family: 'Oswald', sans-serif;
         background: #627d57;
         color: #ffffff;
+        border-radius: .10rem;
         &:hover{
             color: #bccebc;
             background: #ffffff;
+            text-decoration: none;
+            background: #627d57;
         }
     }
 
