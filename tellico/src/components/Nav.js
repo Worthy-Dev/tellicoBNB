@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 // import images
-import logo from "../images/TBB-nav-logo.svg";
+import logo from "../images/TBB-full.svg";
 import hamburger from "../images/hamburger.svg";
 
 const Nav = () => {
@@ -19,7 +19,7 @@ const Nav = () => {
 
       <div className="navBar">
         <button className="hamburger" onClick={handleToggle}>
-            <img src={hamburger} />
+            <img src={hamburger} alt="hamburger navigation"/>
         </button>
         
         <div className="nav-links">

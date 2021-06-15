@@ -26,11 +26,14 @@ const GlobalStyle = createGlobalStyle`
     button{
         cursor: pointer;
         font-size: 1.1rem;
-        padding: 1rem 2rem;
+        padding: .5rem 1rem;
         transition: all 0.5s ease;
         font-family: 'Oswald', sans-serif;
         background: #627d57;
         color: #ffffff;
+        border: none;
+        border-radius: .25rem;
+        line-height: 1.5;
         &:hover{
             color: #bccebc;
             background: #ffffff;
@@ -39,6 +42,10 @@ const GlobalStyle = createGlobalStyle`
 
     h2{
         font-size: 3rem;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-family: 'Oswald', sans-serif;
     }
 `
 
