@@ -7,8 +7,12 @@ import hamburger from "../images/hamburger.svg";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
   const handleToggle = () => {
     setNavbarOpen(prev => !prev)
+  }
+  const closeMenu = () => {
+    setNavbarOpen(false)
   }
 
   return (
@@ -25,19 +29,19 @@ const Nav = () => {
         <div className="nav-links">
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => closeMenu()}>Home</Link>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <Link to="/services" onClick={() => closeMenu()}>Services</Link>
             </li>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/about" onClick={() => closeMenu()}>About Us</Link>
             </li>
             <li>
-              <Link to="/gallery">Gallery</Link>
+              <Link to="/gallery" onClick={() => closeMenu()}>Gallery</Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact" onClick={() => closeMenu()}>Contact Us</Link>
             </li>
           </ul>
         </div>
