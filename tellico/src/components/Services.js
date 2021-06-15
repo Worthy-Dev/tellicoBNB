@@ -108,7 +108,6 @@ const ServicesContainer = styled.div`
         justify-content: center;
         align-items: center;
         h2{
-            font-size: 2.5rem;
             padding: 1rem;
         }
         img{
