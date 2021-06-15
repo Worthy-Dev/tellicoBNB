@@ -1,20 +1,29 @@
 import React from "react";
-import building from "../images/mainBuilding.jpg";
+import { useHistory } from 'react-router-dom';
+// Styling
 import styled from "styled-components";
 import { Card } from 'react-bootstrap';
-import grooming from "../images/grooming.jpeg";
+// Images
 import boarding from "../images/dogs-running.jpeg";
+import building from "../images/mainBuilding.jpg";
 import daycare from "../images/daycare.jpeg";
+import grooming from "../images/grooming.jpeg";
 
 
 const Home = () => {
+  const history = useHistory();
+
+  const redirect = () => {
+      history.push('/contact')
+  }
+
   return (
     <HomeContainer>
       <div className="home-image" >
         <h2>
             A one-of-a-kind facility you have to see to believe. 
         </h2>
-        <button>Book Now</button>
+        <button onClick={redirect}>Book Now</button>
       </div>
       <div className="welcome-message">
         <h3>Welcome</h3>
