@@ -159,6 +159,7 @@ const HomeContainer = styled.div`
         height: 50vh;
         .h2-btn{
           width: 75%;
+          margin: 1.5rem 2rem;
         }
         h2{
           margin-top: 11rem;
@@ -166,17 +167,25 @@ const HomeContainer = styled.div`
           width: 90%;
         }
       }
+      .card-container {
+        margin: 2rem;
+      }
       
     }
     @media (min-width: 786px){
       .home-image{
         .h2-btn{
           width: 55%;
+          margin: 4rem;
         }
       }
       .card-container{
         display: flex;
         width: 80%;
+        justify-content: center;
+        .card{
+          margin: 0 1.5rem;
+        }
       }
     }
     @media (min-width: 1450px){
