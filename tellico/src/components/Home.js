@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from 'react-router-dom';
 // Styling
 import styled from "styled-components";
-import { Card } from 'react-bootstrap';
+import { Card, CardDeck } from 'react-bootstrap';
 // Images
 import boarding from "../images/dogs-running.jpeg";
 import building from "../images/mainBuilding.jpg";
@@ -20,10 +20,12 @@ const Home = () => {
   return (
     <HomeContainer>
       <div className="home-image" >
-        <h2>
-            A one-of-a-kind facility you have to see to believe. 
-        </h2>
-        <button onClick={redirect}>Book Now</button>
+        <div className="h2-btn">
+          <h2>
+              A one-of-a-kind facility you have to see to believe. 
+          </h2>
+          <button onClick={redirect}>Book Now</button>
+        </div>
       </div>
       <div className="welcome-message">
         <h3>Welcome</h3>
@@ -39,38 +41,40 @@ const Home = () => {
       </div>
 
       <div className="card-container">
-        <Card className="card" style={{ width: "18rem" }}>
-          <Card.Img className="card-image" variant="top" src={boarding} />
-          <Card.Body>
-            <Card.Title className="card-title">Boarding</Card.Title>
-            <Card.Text>
-              Your pet will be in excellent hands while you are away. Make reservations in advance to ensure your pet will have accommodations.
-            </Card.Text>
-            <a className="button" href="/services#boarding">Learn More</a>
-          </Card.Body>
-        </Card>
+        <CardDeck>
+          <Card className="card" style={{ width: "18rem" }}>
+            <Card.Img className="card-image" variant="top" src={boarding} />
+            <Card.Body>
+              <Card.Title className="card-title">Boarding</Card.Title>
+              <Card.Text>
+                Your pet will be in excellent hands while you are away. Make reservations in advance to ensure your pet will have accommodations.
+              </Card.Text>
+              <a className="button" href="/services#boarding">Learn More</a>
+            </Card.Body>
+          </Card>
 
-        <Card className="card" style={{ width: "18rem" }}>
-          <Card.Img className="card-image" variant="top" src={daycare} />
-          <Card.Body>
-            <Card.Title className="card-title">Daycare</Card.Title>
-            <Card.Text>
-              We offer peace of mind knowing your pet is in good hands and engaging in morning and afternoon play sessions.
-            </Card.Text>
-            <a className="button" href="/services#daycare">Learn More</a>
-          </Card.Body>
-        </Card>
+          <Card className="card" style={{ width: "18rem" }}>
+            <Card.Img className="card-image" variant="top" src={daycare} />
+            <Card.Body>
+              <Card.Title className="card-title">Daycare</Card.Title>
+              <Card.Text>
+                We offer peace of mind knowing your pet is in good hands and engaging in morning and afternoon play sessions.
+              </Card.Text>
+              <a className="button" href="/services#daycare">Learn More</a>
+            </Card.Body>
+          </Card>
 
-        <Card className="card" style={{ width: "18rem" }}>
-          <Card.Img className="card-image" variant="top" src={grooming} />
-          <Card.Body>
-            <Card.Title className="card-title">Grooming</Card.Title>
-            <Card.Text>
-              A pet likes to be pampered just as much as their owner. We love to make your four-legged family member look and smell great!
-            </Card.Text>
-            <a className="button" href="/services#grooming">Learn More</a>
-          </Card.Body>
-        </Card>
+          <Card className="card" style={{ width: "18rem" }}>
+            <Card.Img className="card-image" variant="top" src={grooming} />
+            <Card.Body>
+              <Card.Title className="card-title">Grooming</Card.Title>
+              <Card.Text>
+                A pet likes to be pampered just as much as their owner. We love to make your four-legged family member look and smell great!
+              </Card.Text>
+              <a className="button" href="/services#grooming">Learn More</a>
+            </Card.Body>
+          </Card>
+        </CardDeck>
       </div>
     </HomeContainer>
   );
@@ -82,24 +86,27 @@ const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  img {
-    width: 425px;
-  }
   .home-image {
     background: url(${building}) no-repeat left top;
     background-size: 100%;
-    flex: 1;
-    height: 60vh;
-
+    flex: auto;
+    /* height: 60vh; */
+    width: 100vw;
+    .h2-btn{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 1.5rem;
+    }
     h2 {
-      font-size: 2.3rem;
-      margin-top: 8.5rem;
-      padding: 0 3rem 0 1.5rem;
+      font-size: 2rem;
+      margin-top: 8rem;
       color: #ffffff;
       font-family: 'Oswald';
     }
     button{
-      margin: 1rem 0 1.5rem 1.5rem;
+      margin: .5rem 0;
       background: #e7e8e1;
       color: #627d57;
     }
@@ -119,14 +126,11 @@ const HomeContainer = styled.div`
   .card-container {
     margin-bottom: 2rem;
   }
-  .card-image {
-    width: 286px;
-    height: 180px;  
-  }
 
   .card {
     margin: 1rem;
     box-shadow: 0px 30px 40px -50px rgba(0, 0, 0, 0.5);
+    
     .card-title {
       font-family: 'Oswald', sans-serif;
       font-size: 1.5rem;
@@ -149,7 +153,39 @@ const HomeContainer = styled.div`
             background: #627d57;
         }
     }
-
+    @media (min-width: 600px){
+      .home-image{
+        background-position: left center;
+        height: 50vh;
+        .h2-btn{
+          width: 75%;
+        }
+        h2{
+          margin-top: 11rem;
+          font-size: 2.5rem;
+          width: 90%;
+        }
+      }
+      
+    }
+    @media (min-width: 786px){
+      .home-image{
+        .h2-btn{
+          width: 55%;
+        }
+      }
+      .card-container{
+        display: flex;
+        width: 80%;
+      }
+    }
+    @media (min-width: 1450px){
+      .home-image{
+        .h2-btn{
+          width: 48%;
+        }
+      }
+    }
 `;
 
 export default Home;
