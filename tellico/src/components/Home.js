@@ -107,8 +107,8 @@ const HomeContainer = styled.div`
     }
     button{
       margin: .5rem 0;
-      background: #e7e8e1;
-      color: #627d57;
+      background: #7ca57c;
+      color: #ffffff;
     }
   }
 
@@ -119,7 +119,7 @@ const HomeContainer = styled.div`
       font-size: 1.8rem;
     }
     .lines{
-    border-top: 2px solid #6c7d57;
+    border-top: 2px solid #7ca57c;
     width: 100%;
   }
   }
@@ -143,7 +143,7 @@ const HomeContainer = styled.div`
         padding: .5rem 1rem;
         transition: all 0.5s ease;
         font-family: 'Oswald', sans-serif;
-        background: #627d57;
+        background: #7ca57c;
         color: #ffffff;
         border-radius: .10rem;
         &:hover{

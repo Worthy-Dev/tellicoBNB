@@ -78,7 +78,7 @@ const NavContainer = styled.div`
     list-style: none;
     position: absolute;
     top: 2;
-    background: #6c7d57;
+    background: #A6BEA6;
     right: 0;
     height: 48vh;
     width: 0;
@@ -113,6 +113,8 @@ const NavContainer = styled.div`
     display: flex;
     flex-direction: column;
     list-style: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4rem;
   }
   
   .menuNav li:first-child {

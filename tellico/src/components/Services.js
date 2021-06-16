@@ -134,7 +134,7 @@ const ServicesContainer = styled.div`
         width: 90%;
         margin: 1.5rem 1rem 0 1rem;
             .lines{
-            border-top: 2px solid #6c7d57;
+            border-top: 2px solid #7ca57c;
             width: 100%;
             }
         }
