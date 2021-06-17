@@ -58,7 +58,9 @@ const Footer = () => {
           </a>
           
         </div>
-          <p className="copyright">&copy; 2014 Tellico Bed & Biscuit. All rights reserved.</p>
+      </div>
+      <div className="copy">
+          <p className="copy-right">&copy; 2014 Tellico Bed & Biscuit. All rights reserved.</p>
       </div>
     </FooterContainer>
   );
@@ -80,12 +82,6 @@ const FooterContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    .copyright{
-        font-size: .7rem;
-        color: #c4bcbc;
-        margin-bottom: 1.5rem;
-    }
-
     .logo-container{
         display: flex;
         justify-content: center;
@@ -94,37 +90,37 @@ const FooterContainer = styled.div`
             width: 270px;
             height: 50px;
         }
-  }
-
-  .section {
-    padding: 1rem;
-    .phone{
-        font-size: 1.4rem;
-        padding: .8rem;
-        font-family: 'Oswald', sans-serif;
     }
-    .hours{
+
+    .section {
+      padding: 1rem;
+      .phone {
+          font-size: 1.4rem;
+          padding: .8rem;
+          font-family: 'Oswald', sans-serif;
+      }
+    .hours {
         font-size: 1.4rem;
         padding-top: 2rem;
         font-family: 'Oswald', sans-serif;
     }
-    .sunday{
+    .sunday {
         padding-top: 1rem;
         font-size: 1.4rem;
         font-family: 'Oswald', sans-serif;
     }
     
-    .social{
+    .social {
         padding: .7rem .2rem;
     }
   }
 
-  .lines{
+  .lines {
     border-top: 2px solid #6c7d57;
     width: 50%;
   }
 
-  p{
+  p {
     margin: 0;
   }
 
@@ -135,5 +131,26 @@ const FooterContainer = styled.div`
   ul {
     list-style-type: none;
   }
-`;
+  }
+  .copy{
+      .copy-right{
+        margin: 1.5rem;
+        font-size: .7rem;
+        color: #c4bcbc;
+      }
+    }
+  @media (min-width: 600px) {
+    
+    .footer {
+      flex-direction: row;
+      .section {
+        
+      }
+    }
+
+    .lines {
+      display: none;
+    }
+  }
+`
 export default Footer;
