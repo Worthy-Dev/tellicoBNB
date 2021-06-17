@@ -10,32 +10,37 @@ const Footer = () => {
   return (
     <FooterContainer>
       <div className="footer">
-        
-        <div className="section">
+        <div className="section info">
           <div className="logo-container">
-              <img className="footer-logo" src={fullLogo} alt="logo" />
+            <img className="footer-logo" src={fullLogo} alt="logo" />
           </div>
           <div className="phone">
-              <p>865-458-8534</p>
-              <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Tellico+Bed+And+Biscuit/@35.7052457,-84.3042971,17.18z/data=!4m13!1m7!3m6!1s0x885e7e70280fe9e1:0x818eeb52964b1ab7!2s13500+Vonore+Rd,+Loudon,+TN+37774!3b1!8m2!3d35.7053837!4d-84.3019763!3m4!1s0x885e7e6546044031:0xdbc136eb60b443a4!8m2!3d35.7042511!4d-84.3029911">Map / Directions</a>
+            <p>865-458-8534</p>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.google.com/maps/place/Tellico+Bed+And+Biscuit/@35.7052457,-84.3042971,17.18z/data=!4m13!1m7!3m6!1s0x885e7e70280fe9e1:0x818eeb52964b1ab7!2s13500+Vonore+Rd,+Loudon,+TN+37774!3b1!8m2!3d35.7053837!4d-84.3019763!3m4!1s0x885e7e6546044031:0xdbc136eb60b443a4!8m2!3d35.7042511!4d-84.3029911"
+            >
+              Map / Directions
+            </a>
           </div>
-          <div className="address">   
-              <p>13500 Vonore Road</p>
-              <p>Loudon, TN 37774</p>
+          <div className="address">
+            <p>13500 Vonore Road</p>
+            <p>Loudon, TN 37774</p>
           </div>
 
-          <div>   
-              <p className="hours">Monday - Saturday</p>
-              <p>9:00 a.m. - 12:00 p.m.</p>
-              <p>6:00 p.m. - 8:00 p.m.</p>
-              <p className="sunday">Sunday</p>
-              <p>6:00 p.m. - 8:00 p.m.</p>
+          <div>
+            <p className="hours">Monday - Saturday</p>
+            <p>9:00 a.m. - 12:00 p.m.</p>
+            <p>6:00 p.m. - 8:00 p.m.</p>
+            <p className="sunday">Sunday</p>
+            <p>6:00 p.m. - 8:00 p.m.</p>
           </div>
         </div>
 
         <hr className="lines"></hr>
-       
-        <div className="section">
+
+        <div className="section links">
           <div className="nav-links">
             <ul>
               <li>
@@ -56,11 +61,12 @@ const Footer = () => {
           <a href="https://www.instagram.com/">
             <img className="social" src={instagram} alt="instagram icon"></img>
           </a>
-          
         </div>
       </div>
       <div className="copy">
-          <p className="copy-right">&copy; 2014 Tellico Bed & Biscuit. All rights reserved.</p>
+        <p className="copy-right">
+          &copy; 2014 Tellico Bed & Biscuit. All rights reserved.
+        </p>
       </div>
     </FooterContainer>
   );
@@ -82,69 +88,73 @@ const FooterContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    .logo-container{
-        display: flex;
-        justify-content: center;
+    .logo-container {
+      display: flex;
+      justify-content: center;
 
-        .footer-logo{
-            width: 270px;
-            height: 50px;
-        }
+      .footer-logo {
+        width: 270px;
+        height: 50px;
+      }
     }
 
     .section {
       padding: 1rem;
       .phone {
-          font-size: 1.4rem;
-          padding: .8rem;
-          font-family: 'Oswald', sans-serif;
+        font-size: 1.4rem;
+        padding: 0.8rem;
+        font-family: "Oswald", sans-serif;
       }
-    .hours {
+      .hours {
         font-size: 1.4rem;
         padding-top: 2rem;
-        font-family: 'Oswald', sans-serif;
-    }
-    .sunday {
+        font-family: "Oswald", sans-serif;
+      }
+      .sunday {
         padding-top: 1rem;
         font-size: 1.4rem;
-        font-family: 'Oswald', sans-serif;
-    }
-    
-    .social {
-        padding: .7rem .2rem;
-    }
-  }
+        font-family: "Oswald", sans-serif;
+      }
 
-  .lines {
-    border-top: 2px solid #6c7d57;
-    width: 50%;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-  }
-  .copy{
-      .copy-right{
-        margin: 1.5rem;
-        font-size: .7rem;
-        color: #c4bcbc;
+      .social {
+        padding: 0.7rem 0.2rem;
       }
     }
+
+    .lines {
+      border-top: 2px solid #6c7d57;
+      width: 50%;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  }
+  .copy {
+    .copy-right {
+      margin: 1.5rem;
+      font-size: 0.7rem;
+      color: #c4bcbc;
+    }
+  }
   @media (min-width: 600px) {
-    
+    text-align: left;
     .footer {
       flex-direction: row;
+      justify-content: space-around;
       .section {
-        
+        margin: 0 5rem;
+        .phone {
+          padding: 1rem 0;
+        }
       }
     }
 
@@ -152,5 +162,5 @@ const FooterContainer = styled.div`
       display: none;
     }
   }
-`
+`;
 export default Footer;
