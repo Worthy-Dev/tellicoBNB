@@ -162,6 +162,7 @@ const HomeContainer = styled.div`
     background: #7ca57c;
     color: #ffffff;
     border-radius: 0.1rem;
+    text-align: center;
     &:hover {
       color: #bccebc;
       background: #ffffff;
