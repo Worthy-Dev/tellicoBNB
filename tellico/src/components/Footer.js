@@ -105,6 +105,7 @@ const FooterContainer = styled.div`
         padding: 0.5rem 1rem;
         transition: all 0.5s ease;
         font-family: "Oswald", sans-serif;
+        font-weight: 400;
         background: #7ca57c;
         color: #ffffff;
         border-radius: 0.1rem;

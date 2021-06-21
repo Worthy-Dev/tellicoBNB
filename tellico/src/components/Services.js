@@ -8,28 +8,51 @@ import grooming from '../images/haircut.JPG';
 const Services = () => {
     return (
         <ServicesContainer>
-            <div id="boarding" className="service">
-                <h2>Services</h2>
-                <img src={boarding} alt="horse booarding" />
+            <div  className="service">
+                <h2 id="boarding">SERVICES</h2>
+                <img  src={boarding} alt="horse booarding" />
                 <div className="title">
                     <h3>Boarding</h3>
                     <hr className="lines"></hr>
                 </div>
                 <div className="details">
                     <p>Whether you are gone for a month, a week, or a day, Tellico Bed & Biscuit is a state of the art facility that provides clean and safe first-class accommodations for your pet. Our top notch caregivers take every precaution to provide a healthy, enjoyable stay for each pet. </p>
-                    <p>Our kennels feature air-conditioning, radiant floor heat, and an air exchange ventilation system in a unique indoor-outdoor facility so your pet will be comfortable all year round.</p>
 
-                    <h3>Fees</h3>
-                    <h4>Includes play sessions, hammock-style beds (dogs), prescribed medications, special diets, and bedtime treats. </h4>
-                    <div className="fee-section">
-                        <p>Dogs: $20 per day</p>
-                        <p>Cats: $15 per day</p>
-                        <p>Rabbits: $5 per day</p>
+                    <div className="bullets">
+                        <div>
+                            <ul>
+                                <h4>Kennel Details:</h4>
+                                <li>Indoor-outdoor areas</li>
+                                <li>Air conditioning</li>
+                                <li>Radiant floor heat</li>
+                                <li>Air exchange ventilation system</li>
+                                <li>Hammock-style beds</li>  
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <h4>Boarding Details:</h4>
+                                <li>We require vaccinations for each pet </li>
+                                <li>Includes play sessions</li>
+                                <li>Administer any prescribed medication</li>
+                                <li>Accommodate special diets</li>
+                                <li>Bedtime treats provided</li>  
+                            </ul>
+                        </div> 
+                    </div>
+
+                    <div className="fee-boarding">
+                        <ul >
+                            <li>Dogs: $20 per day</li>
+                            <li>Cats: $15 per day</li>
+                            <li>Rabbits: $5 per day</li>
+                        </ul> 
+                        <p id="daycare">*10% discount for each additional pet</p>
                     </div>
                 </div>
             </div>
 
-            <div id="daycare" className="service">
+            <div className="service">
                 <img src={daycare} alt="sleeping cat" />
                 <div className="title">
                     <h3>Daycare</h3>
@@ -46,12 +69,12 @@ const Services = () => {
 
                     <h3>Fees</h3>
                     <div className="fee-section">
-                        <p>Dogs & Cats: $16 per day</p>
+                        <p id="grooming">Dogs & Cats: $16 per day</p>
                     </div>
                 </div>
             </div>
 
-            <div id="grooming" className="service">
+            <div className="service">
                 <img src={grooming} alt="dog haircut" />
                 <div className="title">
                     <h3>Grooming</h3>
@@ -90,7 +113,6 @@ const Services = () => {
                     
                 </div>
             </div>
-            <button>Book Now</button>
         </ServicesContainer>
     )
 }
@@ -101,34 +123,66 @@ const ServicesContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-    /* text-align: center; */
+    border: red 1px solid;
+    
     .service{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         h2{
-            padding: 1rem;
+            padding: .5rem;
+            font-weight: 400;
+            font-size: 3rem;
         }
         img{
-            width: 425px;
-            margin-bottom: 1rem;
+            width: 100%;
+            margin-bottom: .5rem;
         }
         h4{
-            font-size: 1.1rem;
+            font-size: 1.5rem;
+            font-weight: 300;
         }
         h3{
-            font-size: 1.4rem;
+            font-size: 2rem;
+            font-weight: 300;
         }
-        .fee-section{
-            margin-bottom: 2rem;
-            p{
-                margin: 0;
-            }
-        }
+        
         .details{
-            margin: 1rem;
+            margin: .2rem 1rem;
             width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .bullets{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                margin: .5rem 0;
+                ul{
+                    li{
+                        margin-left: 1.8rem;
+                    }
+                }
+
+            }
+            .fee-boarding{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                ul{
+                    font-weight: 200;
+                    font-family: "Oswald", sans-serif;
+                    li{
+                    font-size: 1.8rem;
+                    display: inline-block;
+                    padding: 0 1rem;
+                    }
+                }
+            }
         }
         .title {
         width: 90%;
@@ -140,5 +194,19 @@ const ServicesContainer = styled.div`
         }
     }
 
+    @media (min-width: 600px) {
+        .service{
+            .details{
+                .bullets{
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 100%;
+                }
+                .fee-boarding{
+                margin: .8rem 0;
+                }
+            }
+        }
+    }
 `
 export default Services;
