@@ -94,8 +94,6 @@ const FooterContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-
-
   .logo-container {
       display: flex;
       flex-direction: column;
@@ -144,7 +142,6 @@ const FooterContainer = styled.div`
       .details{
         padding-bottom: 1rem;
         font-family: "Oswald", sans-serif;
-        
         .sunday, .hours{
           font-size: 1.3rem;
           font-family: "Oswald", sans-serif;
@@ -168,13 +165,11 @@ const FooterContainer = styled.div`
         width: 100%;
         margin-top: 2rem;
       }
-      
     }
-    
+
     p {
       margin: 0;
     }
-
     a {
       text-decoration: none;
     }
@@ -203,7 +198,6 @@ const FooterContainer = styled.div`
     }
   }
 
-
   @media (min-width: 600px) {
     text-align: left;
     .logo-container {
@@ -221,19 +215,9 @@ const FooterContainer = styled.div`
       .section {
         display: flex;
         flex-direction: column;
-        /* border: red 1px solid; */
         h3{
             margin-top: 1rem;
           };
-        /* margin: 0 2rem; */
-        .details{
-          
-        }
-        /* margin-bottom: 1rem; */
-        /* margin: 0 2rem; */
-        /* .phone {
-          font-size: 1.7rem;
-        } */
       }
     }
 
