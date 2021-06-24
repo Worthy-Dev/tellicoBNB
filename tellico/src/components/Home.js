@@ -144,7 +144,7 @@ const HomeContainer = styled.div`
   }
 
   .card {
-    margin: 1rem;
+    margin: 1rem .8rem 1.5rem;
     box-shadow: 0px 30px 40px -50px rgba(0, 0, 0, 0.5);
 
     .card-title {
@@ -185,7 +185,10 @@ const HomeContainer = styled.div`
       }
     }
     .card-container {
-      margin: 2rem;
+      margin: 2.5rem;
+      .card {
+        margin: 1rem 1.5rem 1.5rem;
+      }
       .card-body {
         display: flex;
         flex-direction: column;
@@ -206,9 +209,6 @@ const HomeContainer = styled.div`
       display: flex;
       width: 80%;
       justify-content: center;
-      .card {
-        margin: 0 1.5rem;
-      }
     }
   }
   @media (min-width: 1450px) {

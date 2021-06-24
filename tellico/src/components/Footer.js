@@ -98,7 +98,7 @@ const FooterContainer = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-top: 1rem;
+      margin-top: 1.8rem;
       .button {
         cursor: pointer;
         font-size: 1.1rem;
@@ -213,6 +213,7 @@ const FooterContainer = styled.div`
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-evenly;
+      margin-top: 1rem;
       .section {
         display: flex;
         flex-direction: column;

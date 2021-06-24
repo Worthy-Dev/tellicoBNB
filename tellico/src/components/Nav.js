@@ -26,35 +26,33 @@ const Nav = () => {
           <img src={hamburger} alt="hamburger navigation" />
         </button>
 
-        <div className="nav-links">
-          <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-            <li>
-              <Link to="/" onClick={() => closeMenu()}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" onClick={() => closeMenu()}>
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={() => closeMenu()}>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link to="/gallery" onClick={() => closeMenu()}>
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={() => closeMenu()}>
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+          <li>
+            <Link to="/" onClick={() => closeMenu()}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" onClick={() => closeMenu()}>
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => closeMenu()}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/gallery" onClick={() => closeMenu()}>
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => closeMenu()}>
+              Contact Us
+            </Link>
+          </li>
+        </ul>
       </div>
     </NavContainer>
   );
@@ -67,7 +65,8 @@ const NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 10;
 
@@ -90,7 +89,7 @@ const NavContainer = styled.div`
     top: 2;
     background: #a6bea6;
     right: 0;
-    height: 48vh;
+    height: 40vh;
     width: 0;
     overflow: hidden;
     max-width: 100%;
@@ -152,9 +151,13 @@ const NavContainer = styled.div`
       position: sticky;
       width: 100%;
       height: 100%;
-      margin-right: 2rem;
+      margin:  0 2rem;
       overflow: hidden;
     }
+    
+    .menuNav.showMenu {
+    margin-top: 0;
+  }
 
     a {
       display: flex;

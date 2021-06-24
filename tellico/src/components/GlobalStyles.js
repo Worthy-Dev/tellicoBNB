@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         background: #edf9ed;
         color: #595b57;
-
+        margin-top: 6.5rem;
     };
 
     a{
