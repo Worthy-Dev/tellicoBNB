@@ -13,6 +13,7 @@ const ContactUs= () => {
       <div className="contact-form-container">
         <h2>Contact Us</h2> 
         <p>Call to make a reservation or send us a message and we will contact you shortly. </p>
+        <h4 className="phone">865-458-8534</h4>
 
         <div className="contact-form">
             <form onSubmit={handleSubmit}>
@@ -71,13 +72,16 @@ const ContactUs= () => {
 }
 
 const Contact = styled.div`
-  padding: 1rem;
   color: #595b57;
   min-height: 90vh;
 
   .contact-form-container {
     display: flex;
     flex-direction: column;
+    h2 {
+      padding: 1rem;
+      font-size: 2.5rem;
+    }
     h2, p{
         text-align: center;
     }
@@ -112,6 +116,11 @@ const Contact = styled.div`
   #service {
       padding: .5rem;
       color: #595b57;
+  }
+
+  .phone {
+    margin-bottom: 1.8rem;
+    text-align: center;
   }
 `;
 

@@ -10,7 +10,7 @@ const Services = () => {
     return (
         <ServicesContainer>
             <div  className="service">
-                <h2 id="boarding">SERVICES</h2>
+                <h2 id="boarding">Services</h2>
                 <img  src={boarding} alt="horse booarding" />
                 <div className="title">
                     <h3>Boarding</h3>
@@ -159,7 +159,6 @@ const ServicesContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-    border: red 1px solid;
     
     .service{
         display: flex;
@@ -167,9 +166,9 @@ const ServicesContainer = styled.div`
         justify-content: center;
         align-items: center;
         h2{
-            padding: .5rem;
+            padding: 1rem;
             font-weight: 400;
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-align: center;
         }
         img{
