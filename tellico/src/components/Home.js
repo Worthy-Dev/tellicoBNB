@@ -106,7 +106,6 @@ const HomeContainer = styled.div`
     background: url(${building}) no-repeat left top;
     background-size: 100%;
     flex: auto;
-    /* height: 60vh; */
     width: 100vw;
     .h2-btn {
       display: flex;
@@ -173,7 +172,7 @@ const HomeContainer = styled.div`
   @media (min-width: 600px) {
     .home-image {
       background-position: left center;
-      height: 50vh;
+      height: 60vh;
       .h2-btn {
         width: 75%;
         margin: 1.5rem 2rem;

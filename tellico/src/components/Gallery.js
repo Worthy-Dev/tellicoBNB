@@ -102,16 +102,17 @@ h2{
   }
 
   @media (min-width: 600px) {
+      
     .carousel {
+        /* height: 60vh; */
         .control-prev.control-arrow:before, .control-next.control-arrow:before  {
         margin: 0 4rem;
         }
         .slide {
             img {
-                width: 50%;
+                width: 40%;
             }
         }
-
         button.control-arrow.control-next,  button.control-arrow.control-prev{
             padding: 3rem;
         }

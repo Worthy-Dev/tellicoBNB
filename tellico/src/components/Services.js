@@ -11,7 +11,7 @@ const Services = () => {
         <ServicesContainer>
             <div  className="service">
                 <h2 id="boarding">Services</h2>
-                <img  src={boarding} alt="horse booarding" />
+                <img  className="service-img" src={boarding} alt="horse booarding" />
                 <div className="title">
                     <h3>Boarding</h3>
                     <hr className="lines"></hr>
@@ -54,7 +54,7 @@ const Services = () => {
             </div>
 
             <div className="service">
-                <img src={daycare} alt="sleeping cat" />
+                <img className="service-img" src={daycare} alt="sleeping cat" />
                 <div className="title">
                     <h3>Daycare</h3>
                     <hr className="lines"></hr>
@@ -85,7 +85,7 @@ const Services = () => {
             </div>
 
             <div className="service">
-                <img src={grooming} alt="dog haircut" />
+                <img className="haircut-img" src={grooming} alt="dog haircut" />
                 <div className="title">
                     <h3>Grooming</h3>
                     <hr className="lines"></hr>
@@ -130,7 +130,7 @@ const Services = () => {
             </div>
 
             <div className="service">
-                <img src={happy} alt="dog haircut" />
+                <img className="service-img" src={happy} alt="dog haircut" />
                 <h2>PREPARE FOR YOUR VISIT</h2>
                 <div className="details">
                     <p>If you are new to Tellico Bed & Biscuit, please come prepared with details on how we can better care for your pet. We have provided additional information below to help you prepare:</p>
@@ -244,6 +244,21 @@ const ServicesContainer = styled.div`
 
     @media (min-width: 600px) {
         .service{
+            .service-img{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            object-position: 40% 40%;
+            margin-bottom: .5rem;
+            }
+            .haircut-img{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            object-position: 0% 0%;
+            margin-bottom: .5rem;
+            }
+            
             .details{
                 .bullets{
                     flex-direction: row;

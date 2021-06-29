@@ -73,11 +73,17 @@ const ContactUs= () => {
 
 const Contact = styled.div`
   color: #595b57;
-  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .contact-form-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
     h2 {
       padding: 1rem;
       font-size: 2.5rem;
@@ -91,11 +97,12 @@ const Contact = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 70%;
   }
   form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
   }
 
   label {
@@ -104,8 +111,10 @@ const Contact = styled.div`
     font-size: 1rem;
   }
 
-  input, textarea {
+  input, textarea, select {
     padding: .4rem;
+    border-style: solid;
+    border-width: 1px;
   }
   
   button {
