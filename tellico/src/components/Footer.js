@@ -153,6 +153,7 @@ const FooterContainer = styled.div`
         font-size: 1.4rem;
         font-family: "Oswald", sans-serif;
         font-weight: 400;
+        text-decoration: none;
       }
       .address{
         font-size: 1.3rem;
