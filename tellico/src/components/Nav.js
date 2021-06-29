@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import images
 import logo from "../images/TBB-full.svg";
 import hamburger from "../images/hamburger.svg";
+import { useHistory } from "react-router-dom";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -14,11 +15,17 @@ const Nav = () => {
   const closeMenu = () => {
     setNavbarOpen(false);
   };
+  
+  const history = useHistory();
+
+  const redirect = () => {
+    history.push("/");
+  };
 
   return (
     <NavContainer>
       <div className="logoDiv">
-        <img className="logo" src={logo} alt="logo" />
+        <img className="logo" src={logo} alt="logo" onClick={redirect} />
       </div>
 
       <div className="navBar">
