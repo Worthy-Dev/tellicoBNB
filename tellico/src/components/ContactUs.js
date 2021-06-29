@@ -134,6 +134,8 @@ const Contact = styled.div`
     font-size: 1.5rem;
     margin-bottom: 1.8rem;
     text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
   }
 `;
 
