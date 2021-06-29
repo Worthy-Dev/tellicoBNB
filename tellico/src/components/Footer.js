@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="section">
           <h3>Our Location</h3>
           <div className="details">
-            <p className="phone">865-458-8534</p>
+            <a className="phone" href="tel:+1-865-458-8534">865-458-8534</a>
             
           </div>
 
