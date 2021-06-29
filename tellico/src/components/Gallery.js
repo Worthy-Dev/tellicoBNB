@@ -16,7 +16,6 @@ const Gallery = () => {
       <Carousel>
         <div>
           <img src={dogwash} alt="dog wash" />
-          {/* <p className="legend">Caption option</p> */}
         </div>
         <div>
           <img src={greatDane} alt="great dane" />
@@ -45,19 +44,34 @@ h2{
 }  
 .carousel {
     .control-dots .dot {
-        border: .5px solid black;
+        border: .5px solid #595b57;
         box-shadow: none;
         width: 9px;
         height: 9px;
     }
-    .control-arrow:hover {
+    .control-arrow {
+        &:hover {
         background: none;
+        }
     }
+
+    
+   button.control-arrow.control-next,  button.control-arrow.control-prev{
+            padding: .5rem;
+    }
+
     .control-next.control-arrow:before {
-      border-left: 10px solid #212529;
+        border-left: 10px solid #595b57;
+        
     }
     .control-prev.control-arrow:before {
-      border-right: 10px solid #212529;
+        border-right: 10px solid #595b57;
+    }
+
+    .thumbs-wrapper {
+        button{
+            padding: 0 .2rem; 
+        }
     }
 
     .slide {
@@ -66,7 +80,7 @@ h2{
       }
       img {
         margin: 0 0 2.5rem;
-        width: 80%;
+        width: 60%;
         border-radius: .2rem;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
       }
@@ -75,15 +89,16 @@ h2{
       display: none;
     }
 
-    .thumb {
-      /* border: none; */
-      .selected {
-        border: none;
-      }
-      &:hover {
-        border: none;
-      }
+    .thumb.selected, .thumb:hover {
+        border: 1.8px solid #595b57;
     }
+
+    .thumbs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
   }
 
   @media (min-width: 600px) {
@@ -93,39 +108,14 @@ h2{
         }
         .slide {
             img {
-                width: 33vw;
-                height: 73vh;
-            }
-        }
-        .thumbs{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-  }
-   @media (min-width: 1024px) {
-    .carousel {
-        .control-prev.control-arrow:before, .control-next.control-arrow:before  {
-        margin: 0 8rem;
-        }
-        .slide {
-            img {
                 width: 50%;
             }
         }
-  }
-  }
-  @media (min-width: 1440px) {
-    .carousel {
-        .control-prev.control-arrow:before, .control-next.control-arrow:before  {
-        margin: 0 16rem;
+
+        button.control-arrow.control-next,  button.control-arrow.control-prev{
+            padding: 3rem;
         }
-        .slide {
-            img {
-                width: 35%;
-            }
-        }
+    }
   }
-  } */
 `;
 export default Gallery;

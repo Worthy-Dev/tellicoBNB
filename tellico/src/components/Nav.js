@@ -66,7 +66,7 @@ const NavContainer = styled.div`
   align-items: center;
   background: #ffffff;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 10;
 
@@ -97,7 +97,7 @@ const NavContainer = styled.div`
   }
 
   .menuNav.showMenu {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     margin-top: 1.5rem;
   }
@@ -110,7 +110,7 @@ const NavContainer = styled.div`
 
   a {
     display: block;
-    padding: 1rem 3rem;
+    padding: .7rem 0;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
