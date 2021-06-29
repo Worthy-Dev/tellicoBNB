@@ -91,6 +91,9 @@ const Contact = styled.div`
     h2, p{
         text-align: center;
     }
+    p{
+        margin: 0 1rem 1rem;
+    }
   }
 
   .contact-form{
