@@ -138,7 +138,7 @@ const Services = () => {
                     <div className="bullets">
                         <div>
                             <ul>
-                                <li>Bring prrof of vaccinations for each pet or a negative blood test</li>
+                                <li>Bring proof of vaccinations for each pet or a negative blood test</li>
                                 <li>Dogs must be current on Rabies, Distemper, and Parvo, and Boardatella vaccine</li>
                                 <li>Cats must be current on Rabies, RCP-C, and FeLV</li>
                                 <li>Provide the name of your veterinarian, in the case of a medical emergency </li>
@@ -258,7 +258,7 @@ const ServicesContainer = styled.div`
             object-position: 0% 0%;
             margin-bottom: .5rem;
             }
-            
+
             .details{
                 .bullets{
                     flex-direction: row;
