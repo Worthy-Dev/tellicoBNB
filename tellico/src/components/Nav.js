@@ -94,6 +94,9 @@ const NavContainer = styled.div`
     overflow: hidden;
     max-width: 100%;
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .menuNav.showMenu {
@@ -126,9 +129,9 @@ const NavContainer = styled.div`
     font-size: 1.4rem;
   }
 
-  .menuNav li:first-child {
-    margin-top: .5rem;
-  }
+//   .menuNav li:first-child {
+//     margin-top: .5rem;
+//   }
 
   @media (min-width: 768px) {
     justify-content: space-between;
