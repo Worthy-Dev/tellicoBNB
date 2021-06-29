@@ -127,7 +127,7 @@ const NavContainer = styled.div`
   }
 
   .menuNav li:first-child {
-    margin-top: 1.5rem;
+    margin-top: .5rem;
   }
 
   @media (min-width: 768px) {
