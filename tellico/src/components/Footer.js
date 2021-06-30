@@ -59,10 +59,16 @@ const Footer = () => {
 
       <div className="copy">
         <div className="social-icons">
-          <a href="https://www.facebook.com/TellicoBandB/">
+          <a 
+            target="_blank"
+            rel="noreferrer" 
+            href="https://www.facebook.com/TellicoBandB/">
             <img className="social" src={facebook} alt="facebook icon"></img>
           </a>
-          <a className="social" href="https://www.instagram.com/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="social" href="https://www.instagram.com/">
             <img className="social" src={instagram} alt="instagram icon"></img>
           </a>
         </div>
