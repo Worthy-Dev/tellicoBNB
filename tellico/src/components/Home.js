@@ -29,7 +29,7 @@ const Home = () => {
         <hr className="lines"></hr>
         <p>
           Surrounded by 30 acres of pasture, our facility houses a 40-run
-          boarding kennel and indoor arena.
+          boarding kennel.
         </p>
         <p>
           We also call Tellico our home. Our on-site residence allows us to take
