@@ -4,10 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 // Images
 import dogwash from "../images/dogWash.JPG";
-import grooming1 from "../images/grooming1.JPG";
-import grooming2 from "../images/grooming2.JPG";
 import grooming3 from "../images/grooming3.JPG";
-import grooming4 from "../images/grooming4.JPG";
 import greatDane from "../images/greatDane.JPG";
 import group from "../images/groupPhoto.JPEG";
 import sign from "../images/mainSign.JPG";
