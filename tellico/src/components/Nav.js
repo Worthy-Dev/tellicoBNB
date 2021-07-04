@@ -136,10 +136,6 @@ const NavContainer = styled.div`
     font-size: 1.4rem;
   }
 
-  .menuNav li:last-child {
-    padding-right: 2rem;
-  }
-
 //   .menuNav li:first-child {
 //     margin-top: .5rem;
 //   }
@@ -187,6 +183,10 @@ const NavContainer = styled.div`
     }
     .logo {
       margin-left: 2rem;
+    }
+
+    .menuNav li:last-child {
+      padding-right: 2rem;
     }
   }
 `;
