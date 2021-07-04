@@ -172,7 +172,7 @@ const HomeContainer = styled.div`
   @media (min-width: 600px) {
     .home-image {
       background-position: left center;
-      height: 60vh;
+      // height: 60vh;
       .h2-btn {
         width: 75%;
         margin: 1.5rem 2rem;
@@ -199,6 +199,7 @@ const HomeContainer = styled.div`
   }
   @media (min-width: 786px) {
     .home-image {
+      height: 35rem;
       .h2-btn {
         width: 55%;
         margin: 4rem;

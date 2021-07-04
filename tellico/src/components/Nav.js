@@ -82,10 +82,10 @@ const NavContainer = styled.div`
     cursor: pointer;
     background: none;
     border: none;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
     img {
-      width: 42px;
-      height: 42px;
+      width: 30px;
+      height: 30px;
     }
   }
 
