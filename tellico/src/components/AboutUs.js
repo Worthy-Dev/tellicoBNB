@@ -13,7 +13,7 @@ const AboutUs = () => {
                     <hr className="lines"></hr>
                 </div>
                 <div className="details">
-                    <p>Doggo ipsum  Extremely cuuuuuute corgo heckin good boys and girls clouds sub woofer big ol corgo, big ol bork doggo adorable doggo. Big ol smol super chub long doggo big ol doggo doggorino, most angery pupper I have ever seen pats borkf puggorino. shoober floofs the neighborhood pupper. Adorable doggo very taste wow porgo heckin good boys doggorino, woofer long woofer pupper. pats. Corgo puggo yapper lotsa pats maximum borkdrive, big ol big ol pupper smol borking doggo with a long snoot for pats boof, long doggo vvv long bois. Smol big ol pupper tungg vvv what a nice floof tungg what a nice floof, big ol long bois corgo porgo. </p>
+                    <h1>COMING SOON...</h1>
                 </div>
             </div>
         </About>

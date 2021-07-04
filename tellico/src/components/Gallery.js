@@ -4,6 +4,10 @@ import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 // Images
 import dogwash from "../images/dogWash.JPG";
+import grooming1 from "../images/grooming1.JPG";
+import grooming2 from "../images/grooming2.JPG";
+import grooming3 from "../images/grooming3.JPG";
+import grooming4 from "../images/grooming4.JPG";
 import greatDane from "../images/greatDane.JPG";
 import group from "../images/groupPhoto.JPEG";
 import sign from "../images/mainSign.JPG";
@@ -15,19 +19,22 @@ const Gallery = () => {
       <h2 id="boarding">Gallery</h2>
       <Carousel>
         <div>
-          <img src={dogwash} alt="dog wash" />
-        </div>
-        <div>
-          <img src={greatDane} alt="great dane" />
-        </div>
-        <div>
           <img src={sign} alt="Tellico sign" />
+        </div>
+        <div>
+          <img src={group} alt="owner with horse and dog" />
         </div>
         <div>
           <img src={norman} alt="bull dog" />
         </div>
         <div>
-          <img src={group} alt="owner with horse and dog" />
+          <img src={dogwash} alt="dog wash" />
+        </div>
+        <div>
+          <img src={grooming3} alt="groomed dog" />
+        </div>
+        <div>
+          <img src={greatDane} alt="great dane" />
         </div>
       </Carousel>
     </GalleryContainer>
