@@ -132,6 +132,7 @@ const FooterContainer = styled.div`
         width: 270px;
         height: 50px;
       }
+
     }
 
   .footer {
@@ -178,7 +179,9 @@ const FooterContainer = styled.div`
     }
 
     p {
-      margin: 0;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.3rem;
+      margin: auto;
     }
     a {
       text-decoration: none;
