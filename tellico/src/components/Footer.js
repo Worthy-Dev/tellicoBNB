@@ -15,6 +15,8 @@ const Footer = () => {
           <a className="button" href="/contact">
           Contact Us
           </a>
+          <br></br>
+          <p>tellicobandb@gmail.com</p>
         </div>
     
         <div className="section">
