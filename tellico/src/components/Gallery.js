@@ -9,6 +9,7 @@ import greatDane from "../images/greatDane.JPG";
 import group from "../images/groupPhoto.JPEG";
 import sign from "../images/mainSign.JPG";
 import norman from "../images/normanTheBully.JPG";
+import grooming5 from "../images/grooming5.jpg";
 
 const Gallery = () => {
   return (
@@ -32,6 +33,9 @@ const Gallery = () => {
         </div>
         <div>
           <img src={greatDane} alt="great dane" />
+        </div>
+        <div>
+          <img src={grooming5} alt="groomed dog" />
         </div>
       </Carousel>
     </GalleryContainer>
