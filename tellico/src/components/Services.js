@@ -9,9 +9,9 @@ import happy from '../images/happy-dog.jpeg';
 const Services = () => {
     return (
         <ServicesContainer>
-            <div  className="service">
+            <div className="service">
                 <h2 id="boarding">Services</h2>
-                <img  className="service-img" src={boarding} alt="horse booarding" />
+                <img className="service-img" src={boarding} alt="horse booarding" />
                 <div className="title">
                     <h3>Boarding</h3>
                     <hr className="lines"></hr>
@@ -27,7 +27,7 @@ const Services = () => {
                                 <li>Air conditioning</li>
                                 <li>Radiant floor heat</li>
                                 <li>Air exchange ventilation system</li>
-                                <li>Hammock-style beds</li>  
+                                <li>Hammock-style beds</li>
                             </ul>
                         </div>
                         <div>
@@ -37,17 +37,17 @@ const Services = () => {
                                 <li>Includes play sessions</li>
                                 <li>Administer any prescribed medication</li>
                                 <li>Accommodate special diets</li>
-                                <li>Bedtime treats provided</li>  
+                                <li>Bedtime treats provided</li>
                             </ul>
-                        </div> 
+                        </div>
                     </div>
 
                     <div className="fee">
                         <ul >
-                            <li>Dogs: $20 per day</li>
+                            <li>Dogs: $22 per day</li>
                             <li>Cats: $15 per day</li>
                             <li>Rabbits: $5 per day</li>
-                        </ul> 
+                        </ul>
                         <p id="daycare">*10% discount for each additional pet</p>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const Services = () => {
                     <div className="fee">
                         <ul >
                             <li>$16 per day</li>
-                        </ul> 
+                        </ul>
                         <p id="daycare">*10% discount for each additional pet</p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ const Services = () => {
                 </div>
                 <div className="details">
                     <p> To keep your pet healthy, we highly recommend setting up a regular grooming appointment. We offer a variety of services to keep your pet clean, healthy, and happy.</p>
-                    
+
 
                     <div className="bullets">
                         <div>
@@ -102,9 +102,9 @@ const Services = () => {
                                 <li>Specially formulated products to clean the coat and skin</li>
                                 <li>Warm air massage fluffs while drying the coat</li>
                                 <li>Special coat treatments available</li>
-                                <li>Specialty shampoo can be accommodated</li>  
-                                <li>Bath includes shampo, ear cleaning, & anal gland cleaning</li>  
-                                <li>Departure bath recommended for each pet that stays more than three days</li> 
+                                <li>Specialty shampoo can be accommodated</li>
+                                <li>Bath includes shampo, ear cleaning, & anal gland cleaning</li>
+                                <li>Departure bath recommended for each pet that stays more than three days</li>
                             </ul>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ const Services = () => {
                             <li>Small (under 20 lbs): $16</li>
                             <li>Medium (up to 50 lbs): $18</li>
                             <li>Large (50+ lbs): $20</li>
-                        </ul> 
+                        </ul>
                     </div>
 
                     <div className="fee add-grooming">
@@ -124,7 +124,7 @@ const Services = () => {
                             <li>Nail Grinding: $10</li>
                             <li>Extra Undercoat Raking: Starts at $5</li>
                             <li>De-matting: Starts at $10</li>
-                        </ul>     
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ const Services = () => {
                 <h2>PREPARE FOR YOUR VISIT</h2>
                 <div className="details">
                     <p>If you are new to Tellico Bed & Biscuit, please come prepared with details on how we can better care for your pet. We have provided additional information below to help you prepare:</p>
-                    
+
                     <div className="bullets">
                         <div>
                             <ul>
