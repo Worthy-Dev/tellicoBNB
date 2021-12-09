@@ -9,11 +9,11 @@ const AboutUs = () => {
                 <h2>About Us</h2>
                 <img src={about} alt="Lori and pup" />
                 <div className="title">
-                    <h3>Lori</h3>
+                    <h3>Lori Fingerlin</h3>
                     <hr className="lines"></hr>
                 </div>
                 <div className="details">
-                    <p>Doggo ipsum  Extremely cuuuuuute corgo heckin good boys and girls clouds sub woofer big ol corgo, big ol bork doggo adorable doggo. Big ol smol super chub long doggo big ol doggo doggorino, most angery pupper I have ever seen pats borkf puggorino. shoober floofs the neighborhood pupper. Adorable doggo very taste wow porgo heckin good boys doggorino, woofer long woofer pupper. pats. Corgo puggo yapper lotsa pats maximum borkdrive, big ol big ol pupper smol borking doggo with a long snoot for pats boof, long doggo vvv long bois. Smol big ol pupper tungg vvv what a nice floof tungg what a nice floof, big ol long bois corgo porgo. </p>
+                    <p>Lori took over ownership in February 2021. She moved from southern California and now calls beautiful Tennessee her home. She loves all animals but olde English Bulldogs have a special place in her heart after breeding them for many years. Lori is excited to embark on this new journey and continue to provide excellent care for the animals that come to stay at Tellico Bed & Biscuit.  </p>
                 </div>
             </div>
         </About>
