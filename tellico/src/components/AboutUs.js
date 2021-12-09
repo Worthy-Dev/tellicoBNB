@@ -9,11 +9,11 @@ const AboutUs = () => {
                 <h2>About Us</h2>
                 <img src={about} alt="Lori and pup" />
                 <div className="title">
-                    <h3>Lori</h3>
+                    <h3>Lori Fingerlin</h3>
                     <hr className="lines"></hr>
                 </div>
                 <div className="details">
-                    <h1>COMING SOON...</h1>
+                    <p>Lori took over ownership in February 2021. She moved from southern California and now calls beautiful Tennessee her home. She loves all animals but olde English Bulldogs have a special place in her heart after breeding them for many years. Lori is excited to embark on this new journey and continue to provide excellent care for the animals that come to stay at Tellico Bed & Biscuit.  </p>
                 </div>
             </div>
         </About>
