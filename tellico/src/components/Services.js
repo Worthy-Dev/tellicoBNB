@@ -103,7 +103,7 @@ const Services = () => {
                                 <li>Warm air massage fluffs while drying the coat</li>
                                 <li>Special coat treatments available</li>
                                 <li>Specialty shampoo can be accommodated</li>
-                                <li>Bath includes shampo, ear cleaning, & anal gland cleaning</li>
+                                <li>Bath includes shampoo, ear cleaning, & anal gland cleaning</li>
                                 <li>Departure bath recommended for each pet that stays more than three days</li>
                             </ul>
                         </div>
