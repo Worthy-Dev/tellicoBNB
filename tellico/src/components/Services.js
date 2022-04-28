@@ -122,7 +122,7 @@ const Services = () => {
                         <ul >
                             <h3>Additional Services:</h3>
                             <li>Nail Grinding: $10</li>
-                            <li>Extra Undercoat Raking: Starts at $5</li>
+                            <li>Extra Undercoat Raking: Starts at $10</li>
                             <li>De-matting: Starts at $10</li>
                         </ul>
                     </div>
@@ -144,6 +144,7 @@ const Services = () => {
                                 <li>Provide the name of your veterinarian, in the case of a medical emergency </li>
                                 <li>Provide your phone number and an emergecy contact number if you cannot be reached </li>
                                 <li>We accept cash or checks, no credit cards at this time</li>
+                                <li>Please provide a 48-hour cancellation notice for all services.</li>
                             </ul>
                         </div>
                     </div>
