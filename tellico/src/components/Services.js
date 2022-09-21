@@ -37,7 +37,6 @@ const Services = () => {
                                 <li>Includes play sessions</li>
                                 <li>Administer any prescribed medication</li>
                                 <li>Accommodate special diets</li>
-                                <li>Bedtime treats provided</li>
                             </ul>
                         </div>
                     </div>
