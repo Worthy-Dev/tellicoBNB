@@ -12,7 +12,7 @@ import grooming1 from "../images/grooming1.png";
 import grooming3 from "../images/grooming3.JPG";
 import grooming4 from "../images/grooming4.png";
 import grooming5 from "../images/grooming5.jpg";
-import cathouse from "../images/cat-condo.heic";
+import cathouse from "../images/cat-condo.jpeg";
 
 
 
