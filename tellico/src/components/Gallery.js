@@ -12,6 +12,7 @@ import grooming1 from "../images/grooming1.png";
 import grooming3 from "../images/grooming3.JPG";
 import grooming4 from "../images/grooming4.png";
 import grooming5 from "../images/grooming5.jpg";
+import cathouse from "../images/cat-condo.heic";
 
 
 
@@ -30,7 +31,7 @@ const Gallery = () => {
           <img src={norman} alt="bull dog" />
         </div>
         <div>
-          <img src={dogwash} alt="dog wash" />
+          <img src={cathouse} alt="cat condos" />
         </div>
         <div>
           <img src={grooming3} alt="groomed dog" />
@@ -47,6 +48,7 @@ const Gallery = () => {
         <div>
           <img src={grooming4} alt="groomed dog" />
         </div>
+
       </Carousel>
     </GalleryContainer>
   );
