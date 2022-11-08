@@ -112,6 +112,10 @@ const Home = () => {
           </Card>
         </CardDeck>
       </div>
+
+<h3>I will not be taking any new clients for the Thanksgiving and Christmas Holidays.
+<br>
+Thanks, Lori</h3>
     </HomeContainer>
   );
 };
