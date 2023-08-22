@@ -112,8 +112,6 @@ const Home = () => {
           </Card>
         </CardDeck>
       </div>
-<br>
-Thanks, Lori</h3>
     </HomeContainer>
   );
 };
