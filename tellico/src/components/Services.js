@@ -66,7 +66,7 @@ const Services = () => {
                         <div>
                             <ul>
                                 <h4>Daycare Details:</h4>
-                                <li>15 minutes of supervised playtime, twice a day</li>
+                                <li>60 minutes of playtime, twice a day</li>
                                 <li>One morning & one afternoon play sessions</li>
                                 <li>Alone or group play</li>
                                 <li>Activities regardless of weather in our indoor/outdoor facility </li>
