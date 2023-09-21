@@ -37,7 +37,7 @@ const Services = () => {
                                 <li>Includes play sessions</li>
                                 <li>Administer any prescribed medication</li>
                                 <li>Accommodate special diets</li>
-                                <li>Bedtime treats provided</li>
+
                             </ul>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ const Services = () => {
                         <div>
                             <ul>
                                 <h4>Daycare Details:</h4>
-                                <li>15 minutes of supervised playtime, twice a day</li>
+                                <li>60 minutes of playtime, twice a day</li>
                                 <li>One morning & one afternoon play sessions</li>
                                 <li>Alone or group play</li>
                                 <li>Activities regardless of weather in our indoor/outdoor facility </li>
@@ -202,7 +202,6 @@ const ServicesContainer = styled.div`
                         margin-left: 1.8rem;
                     }
                 }
-
             }
             .fee{
                 display: flex;
@@ -242,7 +241,6 @@ const ServicesContainer = styled.div`
             }
         }
     }
-
     @media (min-width: 600px) {
         .service{
             .service-img{
@@ -259,7 +257,6 @@ const ServicesContainer = styled.div`
             object-position: 0% 0%;
             margin-bottom: .5rem;
             }
-
             .details{
                 .bullets{
                     flex-direction: row;

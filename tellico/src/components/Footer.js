@@ -15,12 +15,14 @@ const Footer = () => {
           <a className="button" href="/contact">
           Contact Us
           </a>
+          <br></br>
+          <p>tellicobandb@gmail.com</p>
         </div>
     
         <div className="section">
           <h3>Our Location</h3>
           <div className="details">
-            <p className="phone">865-458-8534</p>
+            <a className="phone" href="tel:+1-865-458-8534">865-458-8534</a>
             
           </div>
 
@@ -59,10 +61,16 @@ const Footer = () => {
 
       <div className="copy">
         <div className="social-icons">
-          <a href="https://www.facebook.com/TellicoBandB/">
+          <a 
+            target="_blank"
+            rel="noreferrer" 
+            href="https://www.facebook.com/TellicoBandB/">
             <img className="social" src={facebook} alt="facebook icon"></img>
           </a>
-          <a className="social" href="https://www.instagram.com/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="social" href="https://www.instagram.com/">
             <img className="social" src={instagram} alt="instagram icon"></img>
           </a>
         </div>
@@ -124,6 +132,7 @@ const FooterContainer = styled.div`
         width: 270px;
         height: 50px;
       }
+
     }
 
   .footer {
@@ -153,6 +162,7 @@ const FooterContainer = styled.div`
         font-size: 1.4rem;
         font-family: "Oswald", sans-serif;
         font-weight: 400;
+        text-decoration: none;
       }
       .address{
         font-size: 1.3rem;
@@ -169,7 +179,9 @@ const FooterContainer = styled.div`
     }
 
     p {
-      margin: 0;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.3rem;
+      margin: auto;
     }
     a {
       text-decoration: none;

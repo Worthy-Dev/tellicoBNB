@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import images
 import logo from "../images/TBB-full.svg";
 import hamburger from "../images/hamburger.svg";
+import { useHistory } from "react-router-dom";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -14,11 +15,17 @@ const Nav = () => {
   const closeMenu = () => {
     setNavbarOpen(false);
   };
+  
+  const history = useHistory();
+
+  const redirect = () => {
+    history.push("/");
+  };
 
   return (
     <NavContainer>
       <div className="logoDiv">
-        <img className="logo" src={logo} alt="logo" />
+        <img className="logo" src={logo} alt="logo" onClick={redirect} />
       </div>
 
       <div className="navBar">
@@ -75,10 +82,10 @@ const NavContainer = styled.div`
     cursor: pointer;
     background: none;
     border: none;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
     img {
-      width: 42px;
-      height: 42px;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -94,6 +101,9 @@ const NavContainer = styled.div`
     overflow: hidden;
     max-width: 100%;
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .menuNav.showMenu {
@@ -126,9 +136,9 @@ const NavContainer = styled.div`
     font-size: 1.4rem;
   }
 
-  .menuNav li:first-child {
-    margin-top: 1.5rem;
-  }
+//   .menuNav li:first-child {
+//     margin-top: .5rem;
+//   }
 
   @media (min-width: 768px) {
     justify-content: space-between;
@@ -173,6 +183,10 @@ const NavContainer = styled.div`
     }
     .logo {
       margin-left: 2rem;
+    }
+
+    .menuNav li:last-child {
+      padding-right: 2rem;
     }
   }
 `;
