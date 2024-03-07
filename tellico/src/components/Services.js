@@ -139,8 +139,8 @@ const Services = () => {
                         <div>
                             <ul>
                                 <li>Bring proof of vaccinations for each pet or a negative blood test</li>
-                                <li>Dogs must be current on Rabies, Distemper, and Parvo, and Boardatella vaccine</li>
-                                <li>Cats must be current on Rabies, RCP-C, and FeLV</li>
+                                <li>Dogs must be current on Rabies, Flu, Distemper, and Parvo, and Boardatella vaccine</li>
+                                <li>Cats must be current on Rabies, Flu, RCP-C, and FeLV</li>
                                 <li>Provide the name of your veterinarian, in the case of a medical emergency </li>
                                 <li>Provide your phone number and an emergecy contact number if you cannot be reached </li>
                                 <li>We accept cash or checks, no credit cards at this time</li>
