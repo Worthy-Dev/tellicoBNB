@@ -46,7 +46,7 @@ const Services = () => {
                         <ul >
                             <li>Dogs: $22 per day</li>
                             <li>Cats: $15 per day</li>
-                            <li>Rabbits: $5 per day</li>
+                            <li>Rabbits: $10 per day</li>
                         </ul>
                         <p id="daycare">*10% discount for each additional pet</p>
                     </div>
@@ -140,7 +140,7 @@ const Services = () => {
                             <ul>
                                 <li>Bring proof of vaccinations for each pet or a negative blood test</li>
                                 <li>Dogs must be current on Rabies, Flu, Distemper, and Parvo, and Boardatella vaccine</li>
-                                <li>Cats must be current on Rabies, Flu, RCP-C, and FeLV</li>
+                                <li>Cats must be current on Rabies, RCP-C, and FeLV</li>
                                 <li>Provide the name of your veterinarian, in the case of a medical emergency </li>
                                 <li>Provide your phone number and an emergecy contact number if you cannot be reached </li>
                                 <li>We accept cash or checks, no credit cards at this time</li>
