@@ -37,16 +37,16 @@ const Services = () => {
                                 <li>Includes play sessions</li>
                                 <li>Administer any prescribed medication</li>
                                 <li>Accommodate special diets</li>
-                                <li>Bedtime treats provided</li>
+
                             </ul>
                         </div>
                     </div>
 
                     <div className="fee">
                         <ul >
-                            <li>Dogs: $22 per day</li>
-                            <li>Cats: $15 per day</li>
-                            <li>Rabbits: $5 per day</li>
+                            <li>Dogs: $25 per day</li>
+                            <li>Cats: $20 per day</li>
+                            <li>Rabbits: $10 per day</li>
                         </ul>
                         <p id="daycare">*10% discount for each additional pet</p>
                     </div>
@@ -66,7 +66,7 @@ const Services = () => {
                         <div>
                             <ul>
                                 <h4>Daycare Details:</h4>
-                                <li>15 minutes of supervised playtime, twice a day</li>
+                                <li>60 minutes of playtime, twice a day</li>
                                 <li>One morning & one afternoon play sessions</li>
                                 <li>Alone or group play</li>
                                 <li>Activities regardless of weather in our indoor/outdoor facility </li>
@@ -77,7 +77,7 @@ const Services = () => {
 
                     <div className="fee">
                         <ul >
-                            <li>$16 per day</li>
+                            <li>$20 per day</li>
                         </ul>
                         <p id="daycare">*10% discount for each additional pet</p>
                     </div>
@@ -111,9 +111,10 @@ const Services = () => {
 
                     <div className="fee">
                         <ul >
-                            <li>Small (under 20 lbs): $16</li>
-                            <li>Medium (up to 50 lbs): $18</li>
-                            <li>Large (50+ lbs): $20</li>
+                            <li>Small Dog (under 20 lbs): $18</li>
+                            <li>Medium Dog (up to 50 lbs): $20</li>
+                            <li>Large Dog (50-100 lbs): $22</li>
+                            <li>XLarge Dog (100+ lbs): $30 and up</li>
                         </ul>
                     </div>
 
@@ -202,7 +203,6 @@ const ServicesContainer = styled.div`
                         margin-left: 1.8rem;
                     }
                 }
-
             }
             .fee{
                 display: flex;
@@ -242,7 +242,6 @@ const ServicesContainer = styled.div`
             }
         }
     }
-
     @media (min-width: 600px) {
         .service{
             .service-img{
@@ -259,7 +258,6 @@ const ServicesContainer = styled.div`
             object-position: 0% 0%;
             margin-bottom: .5rem;
             }
-
             .details{
                 .bullets{
                     flex-direction: row;

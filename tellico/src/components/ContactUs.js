@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
 
 const ContactUs= () => {
-  const [state, handleSubmit] = useForm("mvodrqgd");
+  const [state, handleSubmit] = useForm("mgerzlwl");
   if (state.succeeded) {
       return <ThankYouMessage>Your message has been sent!<br></br> We will respond to your email shortly.</ThankYouMessage>;
   }
@@ -13,7 +13,7 @@ const ContactUs= () => {
       <div className="contact-form-container">
         <h2>Contact Us</h2> 
         <p>Call to make a reservation or send us a message and we will contact you shortly. </p>
-        <h4 className="phone">865-458-8534</h4>
+        <a className="phone" href="tel:+1-865-458-8534">865-458-8534</a>
 
         <div className="contact-form">
             <form onSubmit={handleSubmit}>
@@ -91,6 +91,9 @@ const Contact = styled.div`
     h2, p{
         text-align: center;
     }
+    p{
+        margin: 0 1rem 1rem;
+    }
   }
 
   .contact-form{
@@ -128,8 +131,11 @@ const Contact = styled.div`
   }
 
   .phone {
+    font-size: 1.5rem;
     margin-bottom: 1.8rem;
     text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
   }
 `;
 

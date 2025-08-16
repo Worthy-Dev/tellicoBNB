@@ -8,6 +8,13 @@ import greatDane from "../images/greatDane.JPG";
 import group from "../images/groupPhoto.JPEG";
 import sign from "../images/mainSign.JPG";
 import norman from "../images/normanTheBully.JPG";
+import grooming1 from "../images/grooming1.png";
+import grooming3 from "../images/grooming3.JPG";
+import grooming4 from "../images/grooming4.png";
+import grooming5 from "../images/grooming5.jpg";
+import cathouse from "../images/cat-condo.jpeg";
+
+
 
 const Gallery = () => {
   return (
@@ -15,20 +22,33 @@ const Gallery = () => {
       <h2 id="boarding">Gallery</h2>
       <Carousel>
         <div>
-          <img src={dogwash} alt="dog wash" />
-        </div>
-        <div>
-          <img src={greatDane} alt="great dane" />
-        </div>
-        <div>
           <img src={sign} alt="Tellico sign" />
+        </div>
+        <div>
+          <img src={group} alt="owner with horse and dog" />
         </div>
         <div>
           <img src={norman} alt="bull dog" />
         </div>
         <div>
-          <img src={group} alt="owner with horse and dog" />
+          <img src={cathouse} alt="cat condos" />
         </div>
+        <div>
+          <img src={grooming3} alt="groomed dog" />
+        </div>
+        <div>
+          <img src={greatDane} alt="great dane" />
+        </div>
+        <div>
+          <img src={grooming5} alt="groomed dog" />
+        </div>
+        <div>
+          <img src={grooming1} alt="groomed dog" />
+        </div>
+        <div>
+          <img src={grooming4} alt="groomed dog" />
+        </div>
+
       </Carousel>
     </GalleryContainer>
   );
